@@ -1,0 +1,8 @@
+# Hugo 构建产物与缓存（Cloudflare 会自己构建，不需要进仓库）
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# 系统/编辑器杂项
+.DS_Store
+Thumbs.db

@@ -1,0 +1,70 @@
+# baseURL：先填占位的 pages.dev；部署后请改成 Cloudflare 给你的真实网址（或你的自定义域名），结尾保留 /
+baseURL = 'https://alex-blog.pages.dev/'
+title   = 'Alex的博客'
+theme   = 'PaperMod'
+
+locale          = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage  = true      # 中文必备：让字数统计/摘要/阅读时长按中文字符正确计算
+enableRobotsTXT = true      # 自动生成 robots.txt（利于 SEO）
+enableEmoji     = true
+buildDrafts     = false
+buildFuture     = false
+
+[pagination]
+  pagerSize = 10            # 每页文章数（Hugo 0.128+ 写法）
+
+[minify]
+  minifyOutput = true       # 输出压缩后的 HTML
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']   # 生成站内搜索所需的 JSON 索引
+
+[markup.highlight]
+  noClasses = false         # 配合主题做代码高亮（明暗自适应）
+
+[params]
+  env             = 'production'
+  description     = 'Alex 的个人博客，记录折腾、建站与思考。'
+  author          = 'Alex'
+  defaultTheme    = 'auto'  # 跟随系统明暗
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+  ShowToc         = true
+  TocOpen         = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowWordCount   = true
+
+  # 首页顶部问候语
+  [params.homeInfoParams]
+    Title   = '你好，我是 Alex 👋'
+    Content = '欢迎来到我的博客。这里记录我的建站折腾、技术笔记与日常思考。'
+
+  # 社交图标（把 URL 换成你自己的；不需要的可删除）
+  [[params.socialIcons]]
+    name = 'github'
+    url  = 'https://github.com/'
+
+# 顶部导航菜单
+[[menu.main]]
+  identifier = 'posts'
+  name   = '文章'
+  url    = '/posts/'
+  weight = 10
+[[menu.main]]
+  identifier = 'tags'
+  name   = '标签'
+  url    = '/tags/'
+  weight = 20
+[[menu.main]]
+  identifier = 'about'
+  name   = '关于'
+  url    = '/about/'
+  weight = 30
+[[menu.main]]
+  identifier = 'search'
+  name   = '搜索'
+  url    = '/search/'
+  weight = 40
