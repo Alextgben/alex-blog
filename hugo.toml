@@ -45,7 +45,7 @@ buildFuture     = false
   # 社交图标（把 URL 换成你自己的；不需要的可删除）
   [[params.socialIcons]]
     name = 'github'
-    url  = 'https://github.com/'
+    url  = 'https://github.com/Alextgben'
 
 # 顶部导航菜单
 [[menu.main]]
