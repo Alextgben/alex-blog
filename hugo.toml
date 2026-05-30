@@ -1,5 +1,5 @@
 # baseURL：先填占位的 pages.dev；部署后请改成 Cloudflare 给你的真实网址（或你的自定义域名），结尾保留 /
-baseURL = 'https://alex-blog.pages.dev/'
+baseURL = 'https://alex-blog-ao3.pages.dev/'
 title   = 'Alex的博客'
 theme   = 'PaperMod'
 
